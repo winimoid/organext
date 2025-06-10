@@ -42,7 +42,7 @@ OrgaNext est une application mobile complète, conçue avec React Native, pour v
 Clonez le dépôt et installez les dépendances :
 
 ```bash
-git clone <URL_DU_REPO>
+git clone [https://github.com/winimoid/organext.git](https://github.com/winimoid/organext.git)
 cd organext
 npm install
 # ou
