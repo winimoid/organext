@@ -3,13 +3,14 @@ import React, { useEffect, useState } from 'react';
 import { Provider } from 'react-redux';
 import { NavigationContainer } from '@react-navigation/native';
 import { ActivityIndicator, StatusBar, View } from 'react-native';
-import { store } from './src/store/store';
-import Navigation from './src/components/Layout/Navigation';
-import { useDatabase } from './src/hooks/useDatabase';
-import { initI18n } from './src/i18n';
-import { notificationService } from './src/notifications/notificationService';
-import { ThemeProvider } from './src/components/UI/ThemeProvider';
-import { darkTheme, lightTheme } from './src/styles/theme';
+import { store } from './store/store';
+import Navigation from './components/Layout/Navigation';
+import { useDatabase } from './hooks/useDatabase';
+import { initI18n } from './i18n';
+import { notificationService } from './notifications/notificationService';
+import { ThemeProvider } from './components/UI/ThemeProvider';
+import { darkTheme, lightTheme } from './styles/theme';
+import { configureBackgroundFetch } from './services/backgroundTaskService';
 
 const App = () => {
   const { isDBLoading, db } = useDatabase();
@@ -19,6 +20,8 @@ const App = () => {
     const initializeApp = async () => {
       await initI18n();
       notificationService.configure();
+      // ✅ Configuration de la tâche de fond
+      await configureBackgroundFetch();
       setIsAppReady(true);
     };
 

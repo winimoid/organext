@@ -1,97 +1,49 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# OrgaNext - Votre Assistant Personnel Intelligent
 
-# Getting Started
+OrgaNext est une application mobile complète, conçue avec React Native, pour vous aider à organiser votre vie. Elle combine une gestion de tâches et d'événements de pointe avec la puissance de l'intelligence artificielle pour une productivité accrue.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## ✅ Fonctionnalités
 
-## Step 1: Start Metro
+- **Gestion de Tâches (Todo-list)**: CRUD complet pour vos tâches quotidiennes.
+- **Calendrier d'Événements**: Gérez vos rendez-vous et événements avec une vue calendrier intuitive.
+- **Notifications Locales**: Recevez des rappels pour ne jamais manquer une échéance.
+- **Chat IA Intégré**:
+    - Générez des descriptions, des idées, des résumés.
+    - Laissez l'IA compléter vos listes de tâches.
+    - Connectez-vous à votre service d'IA préféré (OpenAI, OpenRouter, Gemini, etc.).
+- **Stockage Local & Sécurisé**: Toutes vos données sont stockées localement sur votre appareil via SQLite. Votre clé API est chiffrée.
+- **UI Moderne**:
+    - Interface inspirée des meilleures applications de productivité.
+    - Support complet du mode clair et sombre.
+- **Multilingue**: Disponible en Français et en Anglais.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## 🧱 Stack Technique
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+- React Native 0.72+
+- TypeScript
+- Redux Toolkit
+- React Navigation v6
+- React Native SQLite Storage
+- React Native Push Notifications
+- Axios
+- i18n-js
+- React Native Calendars & Vector Icons
 
-```sh
-# Using npm
-npm start
+## 🚀 Installation et Démarrage
 
-# OR using Yarn
-yarn start
-```
+### 1. Prérequis
 
-## Step 2: Build and run your app
+- Node.js (version 16+ recommandée)
+- Watchman (pour macOS)
+- Un environnement de développement React Native configuré. Suivez le [guide officiel](https://reactnative.dev/docs/environment-setup) et sélectionnez l'onglet **React Native CLI Quickstart**.
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+### 2. Installation des dépendances
 
-### Android
+Clonez le dépôt et installez les dépendances :
 
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+```bash
+git clone <URL_DU_REPO>
+cd organext
+npm install
+# ou
+yarn install
